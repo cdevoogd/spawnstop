@@ -21,7 +21,6 @@ public class SpawnListener implements Listener {
         
         if (eventSpawnDimension == World.Environment.NETHER && eventSpawnHeight >= safeZoneBottom && eventSpawnHeight <= safeZoneTop) {
             event.setCancelled(true);
-            Bukkit.getLogger().info("Stopped spawn");
         }
 
         
